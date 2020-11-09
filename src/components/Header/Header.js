@@ -3,7 +3,7 @@ import './Header.scss';
 
 const Header = () =>{
   return (
-    <div className='d-flex justify-content-between align-items-center'>
+    <div className='d-flex justify-content-between align-items-center mb-5'>
       <h1>Todo List</h1>
       <p className="mb-0 info">0 more to do, 0 done</p>
     </div>
