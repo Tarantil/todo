@@ -1,10 +1,11 @@
 import React from 'react';
-import {Form} from './Form';
+import {AddForm} from '../AddForm';
+import {SearchForm} from '../SearchForm';
 const Actions = () =>{
   return(
     <>
-      <Form action='search'/>
-      <Form action='add'/>
+      <SearchForm/>
+      <AddForm />
     </>
   );
 };
