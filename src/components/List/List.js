@@ -4,11 +4,11 @@ const List = ({lists}) =>{
   return(
  <div>
    {
-     lists.map(({id, value}) =>(
+     lists.map(({id, value, done}) =>(
      <ListItem
       id={id}
       value={value}
-
+      done={done}
      />
      ))
    }

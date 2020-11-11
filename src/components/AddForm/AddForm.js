@@ -6,7 +6,7 @@ const AddForm = () =>{
     <form className='mb-3'>
         <div className=' d-flex '>
             <Input placeholder='What needs to be done'/>
-            <Button style='btn btn-outline-secondary ml-1 text-nowrap' title="Add Item"/>
+            <Button className='btn btn-outline-secondary ml-1 text-nowrap' title="Add Item"/>
         </div>
       </form>
   );
