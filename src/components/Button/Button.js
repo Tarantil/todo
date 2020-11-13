@@ -1,8 +1,8 @@
 import React from 'react';
-
-const Button = ({className, title}) =>{
+import cn from 'classnames';
+const Button = ({type='button',className, onClick,children}) =>{
   return(
-    <button className={className}>{title}</button>
+    <button className={cn("btn"), className} onClick={onClick}>{children}</button>
   );
 };
 export {Button};

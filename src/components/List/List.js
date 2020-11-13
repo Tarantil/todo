@@ -1,14 +1,16 @@
 import React from 'react';
 import {ListItem} from './ListItem';
-const List = ({lists}) =>{
+const List = ({lists, onItemDelete,onItemDone}) =>{
   return(
  <div>
    {
      lists.map(({id, value, done}) =>(
      <ListItem
-      id={id}
+      key={value}
       value={value}
       done={done}
+      onItemDelete={()=>onItemDelete(id)}
+      onItemDone={()=>onItemDone(id)}
      />
      ))
    }
